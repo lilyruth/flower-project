@@ -1,16 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script src="https://kit.fontawesome.com/875916583e.js" crossorigin="anonymous"></script>
  <link rel="stylesheet" href="style.css">
- <title>Another Lily Ruth Project!</title>
+ <title>My floral shop</title>
 </head>
-<body>
- 
-</body>
-</html>
-<h1>Hello World</h1>
-<h4>There's more to come</h4>
 
+<body>
+
+ <html>
+
+ <main id="top">
+
+  <header>
+   <a href="#top"><i class="fas fa-seedling fa-3x"></i></a>
+
+   <nav>
+    <span><a href="#services">services</a></span>
+    <span><a href="#locations">locations</a></span>
+    <span><a href="#contact">contact</a></span>
+   </nav>
+
+  </header>
+
+
+  <div class="hero-section">
+   <h1>My future floral shop</h1>
+  </div>
+
+  <div class="services-section" id="services">
+   <h2>Services</h2>
+   <div class="services-info">
+
+    <div class="services-square">
+     <img src="./bouquet1.jpg" alt="bouquet" class="service">
+     <h4>Arrangements</h4>
+    </div>
+
+    <div class="services-square">
+     <img src="./tulip-roses.jpg" alt="bouquet" class="service">
+     <h4>Custom Arrangements</h4>
+    </div>
+
+    <div class="services-square">
+     <img src="./orchids.jpg" alt="bouquet" class="service">
+     <h4>Special Orders</h4>
+    </div>
+
+    <div class="services-square">
+     <img src="./tulips2.jpg" alt="bouquet" class="service">
+     <h4>Bulk Pricing</h4>
+    </div>
+
+    <div class="services-square">
+     <img src="./event-flowers.jpg" alt="bouquet" class="service">
+     <h4>Events</h4>
+    </div>
+
+   </div>
+
+  </div>
+
+  <div class="info" id="locations">
+   <h2>Florist Locations</h2>
+
+   <div class="store-info">
+
+    <div class="info-square info-flex">
+     <h3>This is a store</h3>
+     <p>This is address line 1</p>
+     <p>This is address line 2</p>
+     <p>This is a phone number</p>
+    </div>
+
+    <div class="info-square info-flex ">
+     <h3>This is a store</h3>
+     <p>This is address line 1</p>
+     <p>This is address line 2</p>
+     <p>This is a phone number</p>
+    </div>
+
+    <div class="info-square info-flex">
+     <h3>This is a store</h3>
+     <p>This is address line 1</p>
+     <p>This is address line 2</p>
+     <p>This is a phone number</p>
+    </div>
+
+   </div>
+  </div>
+
+  <div class="contact" id="contact">
+   <h2>Contact</h2>
+   <p><a href="mailto:doodlepath@gmail.com">Email us</a></p>
+   <p>555-555-5555</p>
+
+  </div>
+
+  <footer>
+   <p>&#169 DoodlePath Media <span id="date"></span></p>
+
+  </footer>
+
+ </main>
+
+ <script>
+  const date = document.querySelector("#date");
+  date.innerHTML += new Date().getFullYear();
+ </script>
+
+
+ </html>
+</body>
+
+</html>

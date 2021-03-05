@@ -1,9 +1,178 @@
-body {
- background: lavender;
-  text-align: center;
-  font-family: sans-serif;
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header {
+ background:rgb(51, 9, 9);
+ color: whitesmoke;
+ padding: 10px;
+ display: inline-flex;
+ height: 70px;
+ width: 100%;
+ text-align: center;
+ align-items: center;
+ position: fixed;
+ z-index: 1;
+ top: 0;
+}
+.fa-seedling {
+ color: whitesmoke;
+}
+nav {
+ text-align: right;
+ flex-grow: 1;
+
+}
+
+nav a {
+ color: whitesmoke;
+ font-size: 1.5rem;
+ text-decoration: none;
+}
+
+nav span {
+justify-content: flex-end;
+text-align: right;
+align-content: center;
+padding: 0 10px;
+}
+
+.hero-section {
+ margin-top: 70px;
+ width: 100vw;
+ height: 75vh;
+ display: flex;
+ flex-direction: column;
+ align-content: center;
+ justify-content: center;
+ text-align: center;
+ background: url('./tulips-hero.jpg') center/cover fixed no-repeat;
+ color: whitesmoke;
+ border-bottom: 2px solid whitesmoke;
 }
 
 h1 {
+ color: rgb(51, 9, 9);
+ padding: .5rem;
  font-size: 4rem;
+ background: whitesmoke;
+ opacity: .8;
+}
+.services-section {
+ padding-bottom: 2rem;
+ text-align: center;
+ border-bottom: 2px solid whitesmoke;
+ background:rgb(51, 9, 9);
+}
+.services-section h2 {
+ padding-top: 2rem;
+}
+.services-section h2,
+.services-section h4 {
+ color: whitesmoke;
+}
+
+.services-info {
+ display: flex;
+ flex-wrap: wrap;
+ align-content: center;
+ justify-content: space-evenly;
+}
+
+.services-square img {
+ height: 10rem;
+ width: 10rem;
+ object-fit: cover;
+ border-radius: 5px;
+ border: 2px solid whitesmoke;
+ margin: 40px 20px 5px 20px;
+}
+
+.info {
+ padding-top: 2rem;
+ text-align: center;
+ color: whitesmoke;
+ background:rgb(31, 65, 8)
+}
+
+.info h2 {
+ background:rgb(31, 65, 8);
+}
+.store-info {
+
+ display: flex;
+ flex-wrap: wrap;
+ align-content: center;
+ justify-content: space-evenly;
+ margin-top: 2rem;
+ border-bottom: 2px solid whitesmoke;
+ background:rgb(31, 65, 8);
+ padding-bottom: 2rem;
+ 
+}
+
+.info-flex {
+ display: flex;
+ flex-direction: column;
+ align-content: center;
+ justify-content: space-between;
+ background: whitesmoke;
+ color:rgb(51, 9, 9)
+
+}
+
+.info-square {
+ height: 175px;
+ width: 175px;
+ background: whitesmoke;
+ opacity: .9;
+ margin: 20px 20px 10px 20px;
+ padding: 10px;
+ border: 2px solid rgb(51, 9, 9);
+ border-radius: 5px;
+}
+
+.info-square p,
+.info-square h3 {
+ color:rgb(51, 9, 9);
+ background: whitesmoke;
+}
+.contact {
+ height: 10rem;
+ background:rgb(51, 9, 9);
+ color: whitesmoke;
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+}
+
+.contact a {
+ color: whitesmoke;
+}
+footer {
+ border-top: 2px solid whitesmoke;
+ background:rgb(31, 65, 8);
+ color: whitesmoke;
+ padding: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+ .store-info {
+  height: 650px;
+  flex-direction: column;
+ }
+ .services-info {
+  flex-direction: column;
+ }
+
+ nav a {
+  font-size: .9rem;
+ }
+
+ .fa-seedling {
+  font-size: 1.5rem;
+ }
 }
