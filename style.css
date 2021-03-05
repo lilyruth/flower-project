@@ -31,7 +31,10 @@ nav a {
  font-size: 1.5rem;
  text-decoration: none;
 }
-
+nav a:hover,
+.fa-seedling:hover {
+  color:rgb(241, 209, 209)
+}
 nav span {
 justify-content: flex-end;
 text-align: right;
